@@ -8,6 +8,6 @@ meteor
 or 
 meteor --port yourport
 
-open web browser type localhost:yourport/todos 
+open web browser type localhost:yourport/todos in url address
 
 to see the result
