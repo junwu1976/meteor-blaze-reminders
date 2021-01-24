@@ -1,0 +1,47 @@
+<template name="todo_show">
+    <div class="container">
+        <div class="row nav">
+            {{>nav}}
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="card card-default">
+                    <div class="card-header">
+                        Update Reminder
+                    </div>
+                    <div class="card-body">
+                        <form action="" class="reminder-update">
+                            <input type="hidden" name="id" value={{_id}}>
+                            <div class="form-group">
+                                <label for="">{{username}}</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" 
+                                class="form-control"
+                                name="title"
+                                value={{title}}
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea name="description"
+                                id="" cols="5" rows="5"
+                                class="form-control"
+                                value={{description}}
+                                ></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">{{createdAt}}</label>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-success">
+                                    Update Reminder
+                                </button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
