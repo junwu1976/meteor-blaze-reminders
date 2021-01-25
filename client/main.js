@@ -13,3 +13,4 @@ import './template/todo_show.js';
 import './template/task.js';
 import './template/todo_create.js';
 import './template/todos.js';
+import './template/todos_calendar.js';
