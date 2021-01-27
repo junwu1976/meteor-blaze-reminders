@@ -14,11 +14,13 @@ Template.todo_show.events({
         const id = target.id.value;
         const title = target.title.value;
         const description = target.description.value;
+        const start = target.start.value;
         console.log("id:["+id+"]");
         Tasks.update( id, {
             $set: {
                 title: title,
-                description: description
+                description: description,
+                start: start
             },
         });   
         Router.go('/todos');
