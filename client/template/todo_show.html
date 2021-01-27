@@ -13,9 +13,7 @@
                         <form action="" class="reminder-update">
                             <input type="hidden" name="id" value={{_id}}>
                             <div class="form-group">
-                                <label for="">{{username}}</label>
-                            </div>
-                            <div class="form-group">
+                                <label for="title">Title:</label>
                                 <input type="text" 
                                 class="form-control"
                                 name="title"
@@ -23,11 +21,18 @@
                                 />
                             </div>
                             <div class="form-group">
+                                <label for="description">Description:</label>
                                 <textarea name="description"
                                 id="" cols="5" rows="5"
                                 class="form-control"
                                 value={{description}}
                                 ></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="start">Start:</label>
+                                <input type="date" id="start" name="start" 
+                                value={{start}} min="2018-01-01" 
+                                max="2022-12-31">
                             </div>
                             <div class="form-group">
                                 <label for="">{{createdAt}}</label>

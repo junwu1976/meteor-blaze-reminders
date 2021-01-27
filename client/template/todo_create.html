@@ -12,16 +12,24 @@
                     <div class="card-body">
                         <form action="" class="new-reminder">
                             <div class="form-group">
+                                <label for="title">Title:</label>
                                 <input type="text" 
                                 class="form-control"
                                 name="title"
                                 placeholder="Title"/>
                             </div>
                             <div class="form-group">
+                                <label for="description">Description:</label>
                                 <textarea name="description"
                                 id="" cols="5" rows="5"
                                 class="form-control"
                                 placeholder="Description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="start">Start date:</label>         
+                                <input type="date" id="start" name="start" 
+                                value="2021-01-27" min="2018-01-01" 
+                                max="2022-12-31">
                             </div>
                             <div class="form-group text-center">
                                 <button type="submit" class="btn btn-success">

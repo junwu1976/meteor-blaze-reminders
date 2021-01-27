@@ -15,12 +15,14 @@ Template.todo_create.events({
         const target = event.target;
         const title = target.title.value;
         const description = target.description.value;
+        const start = target.start.value;
 
         //  Insert a reminder into the collection
         Tasks.insert({
             title,
             description,
             completed: false,
+            start,
             createdAt: new Date(),  //  current time
             owner: Meteor.userId(),
             username: Meteor.user().username,
