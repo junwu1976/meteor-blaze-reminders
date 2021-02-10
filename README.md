@@ -2,7 +2,7 @@
 
 Run 
 
-meteor install
+meteor npm install
 
 meteor 
 or 
