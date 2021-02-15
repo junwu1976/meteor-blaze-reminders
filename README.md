@@ -1,8 +1,10 @@
 # meteor-blaze-reminders
 
+This is a demo project using meteor ( a full stack javascript framework ) to demonstrate how to use meteor build an app to manage reminders.
+
 Run 
 
-meteor install
+meteor npm install
 
 meteor 
 or 
